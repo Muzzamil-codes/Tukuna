@@ -1,1 +1,38 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sezty Site</title>
+</head>
+<body style="margin:0; font-family: Arial, sans-serif; background: linear-gradient(135deg, #1e1e2f, #3a0ca3); color:white;">
+
+    <div style="display:flex; flex-direction:column; justify-content:center; align-items:center; height:100vh; text-align:center;">
+        
+        <h1 style="font-size:60px; margin:0; letter-spacing:2px;">
+            Welcome ✨
+        </h1>
+        
+        <p style="font-size:18px; opacity:0.8; max-width:500px;">
+            This is a clean, smooth, slightly “sezty” website with gradients and vibes.
+        </p>
+
+        <button onclick="showLove()" 
+            style="margin-top:20px; padding:15px 30px; font-size:16px; border:none; border-radius:30px; background:#ff006e; color:white; cursor:pointer; transition:0.3s;">
+            Click me
+        </button>
+
+        <p id="msg" style="margin-top:20px; font-size:20px; opacity:0;"></p>
+
+    </div>
+
+    <script>
+        function showLove() {
+            let msg = document.getElementById("msg");
+            msg.innerText = "You're kinda cool ngl 😎";
+            msg.style.opacity = "1";
+        }
+    </script>
+
+</body>
+</html>
